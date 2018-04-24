@@ -1,2 +1,2 @@
-# bancohoras
-arquivos para Ponto de Bolsista CTI/EAJ/UFRN
+# Projeto de Ponto
+Ponto de Bolsista CTI/EAJ/UFRN
