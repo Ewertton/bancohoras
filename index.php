@@ -18,27 +18,14 @@
     ?>
   </head>
   <body>
-    <div class="container-fluid">
-    <br>
-      <hgroup id="navbar">
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <img src="imagens/EAJ_LOGO.png" width="80">&nbsp;&nbsp;&nbsp;&nbsp;<img src="imagens/GTI_LOGO_TRANS.png" width="80" padding: 20px>
-            </div>
-          </div>
-        </nav>
-      </hgroup>
-
-      <div class="text-center">
-          <h1 > Coordenação de Tecnologia da Informação </h1>
-      </div>
+    
+    <?php include 'header.php';?>
 
       <hgroup id="logon">
         <div class="container-fluid">
           <div style="text-align: center">
           <br>
-            <img src="imagens/EAJ_LOGO.png" width="100"><img src="imagens/GTI_LOGO_TRANS.png" width="100">
+            <!--<img src="imagens/EAJ_LOGO.png" width="100"><img src="imagens/GTI_LOGO_TRANS.png" width="100">-->
               <form class="form-inline" name="logar" method="post" action="autenticacao.php">
                   <h2> Controle de Ponto </h2>
                   <input type="text" class="form-control" name="login" placeholder="Usuário" required=""> &nbsp;

@@ -65,7 +65,15 @@
         $_SESSION['Senha'] = $dados['senha'];
 
         header("location: admin.php");
-      } else{
+      } else if ($usuario['Estagiario'] == "e" || $usuario['Cargo'] == "estagiario" || $usuario['Cargo'] == "Estagiario") {
+        session_start();
+
+        $_SESSION['Login'] = $dados['login'];
+        $_SESSION['Senha'] = $dados['senha'];
+
+        header("location: bolsistas.php");
+      }
+       else{
         //header("location: admin.php");
         echo "<script>alert('PROBLEMA COM SEU CADASTRO! -> entre em contato com o administrados <-');</script>";
         header("location: index.php?erro=1");
